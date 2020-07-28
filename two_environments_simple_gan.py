@@ -65,7 +65,7 @@ discriminator = torch.nn.Sequential(
     torch.nn.Sigmoid()
 )
 # Optimizers
-loss_fn_d = torch.nn.MSELoss(reduction='sum')
+loss_fn_d = torch.nn.BCELoss(reduction='sum')
 optimizer_d = torch.optim.Adam(discriminator.parameters(), lr=learning_rate_d)
 optimizer_g = torch.optim.SGD([t], learning_rate_g)
 
