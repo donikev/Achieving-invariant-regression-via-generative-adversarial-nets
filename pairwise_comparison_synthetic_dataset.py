@@ -1,7 +1,10 @@
+
 ########################################################################################################################
-# Regression: solve Y = X*t by stabilizing the residual distribution across two environments
-# Compare results over conventional linear regression
-# New: Choice of noise, Choice of GAN
+#
+# Pairwise Comparison Algorithm on the Synthetic Dataset
+#
+# Goal: show that the pairwise comparison algorithm works on an artificial dataset
+#
 ########################################################################################################################
 
 ########################################################################################################################
@@ -13,7 +16,6 @@ import numpy as np
 import random
 import time
 import copy
-#import progressbar
 from time import sleep
 from sklearn.linear_model import LinearRegression
 
